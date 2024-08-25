@@ -24,7 +24,7 @@
     </h4>
   </a>
 </div>
-<div class="relative shadow-2xl grid place-items-center">
+<div class="relative grid place-items-center">
   <img
     src={"assets/profile.png"}
     alt="Profile image"

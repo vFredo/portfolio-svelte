@@ -30,7 +30,7 @@
     </button>
   </div>
 
-  <Header {y} {innerHeight} />
+  <Header {y} />
   <slot />
   <Footer />
 </div>
