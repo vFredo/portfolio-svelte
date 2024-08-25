@@ -1,14 +1,26 @@
 <script>
   export let data;
+  let x = 0;
+  let y = 0;
+
+  function handleMouseMove(event, card) {
+    const rect = card.getBoundingClientRect();
+    x = event.clientX - rect.left;
+    y = event.clientY - rect.top;
+
+    card.style.setProperty("--x", `${x}px`);
+    card.style.setProperty("--y", `${y}px`);
+  }
 </script>
 
 <a
   href={data.href}
   target="_blank"
-  class="p-4 sm:p-6 md:pd-8 flex flex-col gap-4 rounded-lg border border-solid border-blue-700 text-center group cursor-pointer hover:border-blue-400 duration-200"
+  class="card p-4 sm:p-6 md:pd-8 flex flex-col gap-4 rounded-lg border border-zinc-600 text-center group cursor-pointer duration-200"
+  on:mousemove={(event) => handleMouseMove(event, event.currentTarget)}
 >
   <div
-    class="relative bg-zinc-900 grid place-items-center px-4 text-5xl md:text-6xl -mt-10 sm:-mt-12 md:-mt-14 lg:-mt-16 mx-auto duration-200 overflow-hidden rounded-full"
+    class="relative grid place-items-center px-4 text-5xl md:text-6xl mx-auto duration-200 overflow-hidden"
   >
     <i class={data.icon + " relative z-1"} />
   </div>

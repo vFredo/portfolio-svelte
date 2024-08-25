@@ -2,21 +2,21 @@
   import Project from "../components/Project.svelte";
   let projects = [
     {
-      href: "#",
+      href: "https://github.com/vFredo/gameOfLife",
       name: "Game of Life",
-      icon: "fa-solid fa-terminal",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia error facere culpa, blanditiis praesentium voluptatibus neque maiores magni odio perspiciatis excepturi illum nostrum id impedit. Repellendus reprehenderit distinctio aut.",
+      icon: "fa-solid fa-microchip",
+      desc: "Connway's Game of Life implementation on Go that renders on the terminal. You can load and save diferent presets in JSON format and change different properties of the game itself, also with convenient keyboard shortcuts to advance generations, stop running and save or load different presets.",
     },
     {
-      href: "#",
-      name: "TODO's manager",
-      icon: "fa-solid fa-list-check",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia error facere culpa, blanditiis praesentium voluptatibus neque maiores magni odio perspiciatis excepturi illum nostrum id impedit. Repellendus reprehenderit distinctio aut.",
+      href: "https://github.com/vFredo/pngme",
+      name: "PNGme",
+      icon: "fa-solid fa-image",
+      desc: "A command line program, written in rust, that lets you encode/decode secret messages inside PNG format files.",
     },
     {
       href: "#",
       name: "Zoo webpage",
-      icon: "fa-regular fa-file-lines",
+      icon: "fa-solid fa-desktop",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia error facere culpa, blanditiis praesentium voluptatibus neque maiores magni odio perspiciatis excepturi illum nostrum id impedit. Repellendus reprehenderit distinctio aut.",
     },
   ];
