@@ -29,7 +29,7 @@
       <div
         class="absolute top-0 right-full w-full h-full bg-blue-300 opacity-20 group-hover:translate-x-full z-0 duration-200 hover:font-bold"
       />
-      <h4 class="relative z-9">Get in touch</h4>
+      <h4 class="relative z-9">Contact me</h4>
     </a>
   </div>
 </header>
