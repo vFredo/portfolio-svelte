@@ -29,13 +29,12 @@
 <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
   {#each benefits as benefit, index}
     <div class="flex gap-6 sm:gap-8">
-      <p
-        class="poppins text-4xl sm:text-5xl md:text-6xl text-zinc-500 font-semibold"
-      >
+      <p class="poppins text-4xl sm:text-5xl md:text-6xl text-zinc-500 font-semibold" >
         0{index + 1}
       </p>
+
       <div class="flex flex-col gap-6 sm:gap-8">
-        <h3 class="text-2xl sm:text-3xl md:text-5xl">{benefit.name}</h3>
+        <h3 class="text-2xl sm:text-2xl md:text-4xl">{benefit.name}</h3>
         <p>{benefit.desc}</p>
       </div>
     </div>
