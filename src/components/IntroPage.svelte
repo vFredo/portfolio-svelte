@@ -2,7 +2,7 @@
   class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
 >
   <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
-    Hi, I'm <span class="poppins text-blue-400">Fredo</span> Rodriguez<br />
+    Hi, I'm <span class="poppins text-blue-400">Alfredo</span> Rodriguez<br />
     a <span class="poppins text-blue-400">Software</span> Engineer.
   </h2>
   <p class="text-base sm:text-lg md:text-xl">

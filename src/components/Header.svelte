@@ -13,7 +13,7 @@
       : "py-6 bg-transparent border-transparent")}
 >
   <a href="#home" class="font-medium poppins">
-    <b class="font-bold poppins">Fredo</b> Rodriguez
+    <b class="font-bold poppins">Alfredo</b> Rodriguez
   </a>
 
   <div class="sm:flex ml-auto pr-4 items-center gap-4 hidden">
