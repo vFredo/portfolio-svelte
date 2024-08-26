@@ -18,16 +18,15 @@
       class="absolute top-0 right-full w-full h-full bg-blue-300 opacity-20 group-hover:translate-x-full z-0 duration-200"
     />
     <h4 class="relative z-9">
-      Resume <i
-        class="fa-solid fa-arrow-right place-items-center aspect-square"
-      />
+      Resume
+      <i class="fa-solid fa-arrow-right place-items-center aspect-square" />
     </h4>
   </a>
 </div>
 <div class="relative grid place-items-center">
   <img
     src={"assets/profile.png"}
-    alt="Profile image"
+    alt="Computer Hero"
     class="object-cover z-[2] max-h-[70vh]"
   />
 </div>
