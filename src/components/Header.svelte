@@ -13,6 +13,9 @@
       ? "py-2 bg-zinc-950 border-blue-950 bg-opacity-50"
       : "py-2 bg-transparent border-transparent")}
 >
+
+  <title>Fredo | Dev</title>
+
   <a href="#home" class="font-medium poppins hover:animate-jiggle">
     <b class="font-bold poppins">Alfredo</b> Rodriguez
   </a>
