@@ -9,18 +9,18 @@
 <main class="flex flex-col flex-1 p-4">
   <section
     id="introPage"
-    class="grid grid-cols-1 lg:grid-cols-2 gap-10"
+    class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-20 lg:py-32"
   >
     <IntroPage />
   </section>
 
-  <section id="about" class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">
+  <section id="about" class="py-20 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">
     <About />
   </section>
 
   <section
     id="experience"
-    class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
+    class="py-20 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
   >
     <Experience />
   </section>
@@ -30,7 +30,7 @@
     <p class="mx-auto">So why not invest?</p>
   </section>
 
-  <section id="contact" class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">
+  <section id="contact" class="py-20 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">
     <Contact />
   </section>
 </main>
