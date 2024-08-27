@@ -27,7 +27,7 @@
 
   <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
     <ProjectView />
-    <p class="mx-auto">So why not invest?</p>
+    <p class="mx-auto italic text-lg">So why not invest?</p>
   </section>
 
   <section id="contact" class="py-20 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">

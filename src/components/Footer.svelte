@@ -23,7 +23,7 @@
     </p>
     <!-- LinkedIn -->
     <p>
-      <i class="fa-brands fa-linkedin pr-2"/>
+      <i class="fa-brands fa-linkedin pr-2" />
       <a
         href="https://www.github.com/vFredo"
         class="text-blue-400"
@@ -32,10 +32,16 @@
         Luis Alfredo
         <sup>
           <span class="text-xs scale-75 pl-0.5">
-            <i class="fa-solid fa-arrow-up-right-from-square text-xs scale-[75%]" />
+            <i
+              class="fa-solid fa-arrow-up-right-from-square text-xs scale-[75%]"
+            />
           </span>
         </sup>
       </a>
+    </p>
+    <p class="text-xs text-zinc-400">
+      <i class="fa-regular fa-copyright pr-1" />
+      Fredo 2024
     </p>
   </div>
 </footer>

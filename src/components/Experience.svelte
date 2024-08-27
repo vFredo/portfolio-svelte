@@ -1,16 +1,20 @@
 <script>
   let experiences = [
     {
-      name: "Self-taught developer",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia error facere culpa, blanditiis praesentium voluptatibus neque maiores magni odio perspiciatis excepturi illum nostrum id impedit. Repellendus reprehenderit distinctio aut.",
+      name: "Education",
+      desc: "Pontificia Universidad Javeriana, Cali - Systems Engineer 2025",
     },
     {
-      name: "A product designer & UX fanatic",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia error facere culpa, blanditiis praesentium voluptatibus neque maiores magni odio perspiciatis excepturi illum nostrum id impedit. Repellendus reprehenderit distinctio aut.",
+      name: "Soluware Colombia S.A.S",
+      desc: "System Program Analyst - 2021-2024",
     },
     {
-      name: "Excelent Comunicator",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia error facere culpa, blanditiis praesentium voluptatibus neque maiores magni odio perspiciatis excepturi illum nostrum id impedit. Repellendus reprehenderit distinctio aut.",
+      name: "MisCursosEnLinea",
+      desc: "Part-time Web developer - Summer 2017",
+    },
+    {
+      name: "DevHack Certificate",
+      desc: "Python Certificate - 2018",
     },
   ];
 </script>
@@ -23,16 +27,17 @@
     A <span class="poppins text-blue-400">little</span> bit about my <span class="poppins text-blue-400">experiences</span>.
   </h3>
 </div>
-<div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
+<div class="flex flex-col gap-20 w-full mx-auto max-w-[600px]">
   {#each experiences as exp, index}
     <div class="flex gap-6 sm:gap-8">
+
       <p class="poppins text-4xl sm:text-5xl md:text-6xl text-zinc-500 font-semibold" >
         0{index + 1}
       </p>
 
-      <div class="flex flex-col gap-6 sm:gap-8">
-        <h3 class="text-2xl sm:text-2xl md:text-4xl">{exp.name}</h3>
-        <p>{exp.desc}</p>
+      <div class="flex flex-col">
+        <h3 class="text-2xl sm:text-2xl md:text-4xl poppins">{exp.name}</h3>
+        <p class="italic">{exp.desc}</p>
       </div>
     </div>
   {/each}
