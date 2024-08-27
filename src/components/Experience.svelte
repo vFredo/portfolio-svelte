@@ -2,7 +2,7 @@
   let experiences = [
     {
       name: "Education",
-      desc: "Pontificia Universidad Javeriana, Cali - Systems Engineer 2025",
+      desc: "Pontificia Universidad Javeriana, Cali - Software Engineer 2025",
     },
     {
       name: "Soluware Colombia S.A.S",
@@ -10,7 +10,7 @@
     },
     {
       name: "MisCursosEnLinea",
-      desc: "Part-time Web developer - Summer 2017",
+      desc: "Part-time Web Developer - Summer 2017",
     },
     {
       name: "DevHack Certificate",
