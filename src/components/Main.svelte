@@ -14,7 +14,7 @@
     <IntroPage />
   </section>
 
-  <section id="about" class="py-20 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">
+  <section id="about" class="pt-3 lg:pt-4 pb-20 lg:pb-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">
     <About />
   </section>
 
