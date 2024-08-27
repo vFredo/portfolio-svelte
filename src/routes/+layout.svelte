@@ -16,7 +16,7 @@
   id="home"
   class="relative flex flex-col mx-auto max-w-[1400px] w-full text-sm sm:text-base min-h-screen"
 >
-  <!-- Go up button -->
+  <!-- Go UP button -->
   <div
     class={"fixed bottom-0 right-0 duration-200 flex p-10 z-[10] " +
       (y > 0
@@ -25,7 +25,7 @@
   >
     <button
       on:click={goTop}
-      class="ml-auto rounded-full bg-zinc-700 bg-opacity-25 text-zinc-50 px-3 sm:px-4 hover:bg-zinc-950 cursor-pointer"
+      class="ml-auto rounded-full bg-zinc-700 bg-opacity-25 text-zinc-50 px-3 sm:px-4 hover:bg-zinc-950 cursor-pointer transition duration-500 backdrop-blur-lg backdrop-brightness-125"
     >
       <i class="fa-solid fa-arrow-up grid place-items-center aspect-square p-1 text-xl" />
     </button>

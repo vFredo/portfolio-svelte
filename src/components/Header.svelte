@@ -21,18 +21,13 @@
 >
   <title>Fredo | Dev</title>
 
-  <a href="#home" class="font-medium poppins hover:animate-jiggle">
+  <a
+    href="#home"
+    class="font-medium poppins hover:animate-jiggle"
+    on:click={() => (menuOpen = false)}
+  >
     <b class="font-bold poppins">Alfredo</b> Rodriguez
   </a>
-
-  <!-- Burger Menu Button -->
-  <button class="sm:hidden block focus:outline-none" on:click={toggleMenu}>
-    {#if menuOpen}
-      <i class="fa-solid fa-xmark" />
-    {:else}
-      <i class="fa-solid fa-bars" />
-    {/if}
-  </button>
 
   <!-- Tabs Menu -->
   <div class="sm:flex ml-auto pr-4 items-center gap-4 hidden">
@@ -53,6 +48,15 @@
       Contact me
     </a>
   </div>
+
+  <!-- Burger Menu Button -->
+  <button class="sm:hidden block focus:outline-none" on:click={toggleMenu}>
+    {#if menuOpen}
+      <i class="fa-solid fa-xmark" />
+    {:else}
+      <i class="fa-solid fa-bars" />
+    {/if}
+  </button>
 
   <!-- Mobile Menu -->
   {#if menuOpen}
