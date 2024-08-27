@@ -4,7 +4,6 @@
   let message = "";
 
   function handleSubmit() {
-    // Handle form submission logic here
     console.log({ name, email, message });
   }
 </script>
@@ -57,7 +56,7 @@
         rows="4"
         bind:value={message}
         required
-        class="mt-1 block w-full bg-zinc-800 border-zinc-700 rounded-md shadow-sm focus:blue-indigo-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+        class="mt-1 block w-full h-[200px] bg-zinc-800 border-zinc-700 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
       ></textarea>
     </div>
 
