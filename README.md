@@ -1,4 +1,4 @@
-# Portofilio
+# Portfolio
 My portfolio page...
 
 ## Developing
