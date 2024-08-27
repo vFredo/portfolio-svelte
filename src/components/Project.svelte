@@ -1,20 +1,19 @@
 <script>
-  export let data;
-  export let proId;
+  export let prod;
+  export let prodId;
 </script>
 
 <li
-  aria-labelledby={"project-item-" + proId}
-  data-item-index={proId}
+  aria-labelledby={"project-item-" + prodId}
   aria-current="false"
   aria-hidden="false"
+  data-item-index={prodId}
   class="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md"
 >
   <a
-    href={data.href}
+    href={prod.href}
     target="_blank"
-    aria-label={data.name + " project details"}
-    aria-disabled="false"
+    aria-label={prod.name + " project details"}
     class="group block h-full w-full rounded-md border border-zinc-50/30"
     draggable="false"
   >
@@ -26,29 +25,29 @@
           datetime="2023-08-01"
           class="block translate-y-full text-xs uppercase text-zinc-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0"
         >
-          {data.date}
+          {prod.date}
         </time>
       </div>
 
       <div class="overflow-hidden">
         <h3
-          id={"project-item-" + proId}
+          id={"project-item-" + prodId}
           class="translate-y-full text-2xl font-bold transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-4xl"
         >
-          {data.name}
+          {prod.name}
         </h3>
       </div>
       <div class="overflow-hidden">
         <p
           class="translate-y-full text-xs text-zinc-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-sm"
         >
-          {data.desc}
+          {prod.desc}
         </p>
       </div>
     </article>
     <img
-      alt={data.name + " background"}
-      src={data.imgPath}
+      alt={prod.name + " background"}
+      src={prod.imgPath}
       sizes="(max-width: 3840px) 100vw, 3840px"
       width="3840"
       height="2160"

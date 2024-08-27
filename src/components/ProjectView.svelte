@@ -1,5 +1,6 @@
 <script>
   import Project from "../components/Project.svelte";
+
   let projects = [
     {
       href: "https://github.com/vFredo/gameOfLife",
@@ -24,13 +25,27 @@
     },
   ];
 
-  function moveCarousel(direction) {
-    // direction = True -> Right
+  let currentProdId = -1;
+
+  function moveCarousel(offset) {
+    let prodId = Math.abs(currentProdId + offset) % projects.length;
+    currentProdId = prodId;
+
     const carousel = document.getElementById("project-carousel");
-    carousel.scrollBy({
-      left: direction ? carousel.clientWidth/2 : -carousel.clientWidth/2,
-      behavior: "smooth"
-    });
+    const project = document.querySelector(`[data-item-index="${prodId}"]`);
+
+    if (project) {
+      const projectLeft = project.offsetLeft;
+      const carouselWidth = carousel.clientWidth;
+      const projectWidth = project.clientWidth;
+
+      const scrollPosition = projectLeft - carouselWidth / 2 + projectWidth / 2;
+
+      carousel.scrollTo({
+        left: scrollPosition,
+        behavior: "smooth",
+      });
+    }
   }
 </script>
 
@@ -51,8 +66,8 @@
         type="button"
         title="Previous project slide"
         aria-controls="project-carousel"
-        class="pointer-events-auto aspect-square h-fit rounded-full border border-zinc-600 bg-zinc-900/90 p-4 text-zinc-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-zinc-900/50"
-        on:click={() => moveCarousel(false)}
+        class="pointer-events-auto aspect-square h-fit rounded-full border border-zinc-600 bg-zinc-900/90 p-4 text-zinc-100 drop-shadow-md backdrop-blur-md supports-[backdrop-filter]:bg-zinc-900/50"
+        on:click={() => moveCarousel(-1)}
       >
         <i class="size-5 fa-solid fa-chevron-left" />
       </button>
@@ -60,8 +75,8 @@
         type="button"
         title="Next project slide"
         aria-controls="project-carousel"
-        class="pointer-events-auto aspect-square h-fit rounded-full border border-zinc-600 bg-zinc-900/90 p-4 text-zinc-100 drop-shadow-md backdrop-blur-md disabled:cursor-not-allowed disabled:opacity-50 supports-[backdrop-filter]:bg-zinc-900/50"
-        on:click={() => moveCarousel(true)}
+        class="pointer-events-auto aspect-square h-fit rounded-full border border-zinc-600 bg-zinc-900/90 p-4 text-zinc-100 drop-shadow-md backdrop-blur-md supports-[backdrop-filter]:bg-zinc-900/50"
+        on:click={() => moveCarousel(1)}
       >
         <i class="size-5 fa-solid fa-chevron-right" />
       </button>
@@ -76,7 +91,7 @@
         class="grid auto-cols-min grid-flow-col gap-x-6 overflow-x-auto pe-[calc(50vw-(clamp(18rem,42vmin,26rem)+1.5rem)/2)] ps-[calc(50vw-clamp(18rem,42vmin,26rem)/2-7px)]"
       >
         {#each projects as project, index}
-          <Project data={project} proId={index} />
+          <Project prod={project} prodId={index} />
         {/each}
       </ul>
     </div>
