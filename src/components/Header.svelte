@@ -1,9 +1,9 @@
 <script>
   export let y;
   let tabs = [
-    { name: "Projects", link: "#projects" },
-    { name: "About me", link: "#about" },
+    { name: "About", link: "#about" },
     { name: "Experience", link: "#experience" },
+    { name: "Projects", link: "#projects" },
   ];
 </script>
 

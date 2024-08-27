@@ -37,10 +37,5 @@
         </sup>
       </a>
     </p>
-    <!-- Email -->
-    <p class="italic text-zinc-400">
-      <i class="fa-solid fa-envelope pr-1 text-zinc-50"/>
-      luisalfredo9905@gmail.com
-    </p>
   </div>
 </footer>
