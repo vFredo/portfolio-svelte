@@ -12,6 +12,7 @@
 >
   <a
     href={data.href}
+    target="_blank"
     aria-label={data.name + " project details"}
     aria-disabled="false"
     class="group block h-full w-full rounded-md border border-zinc-50/30"
