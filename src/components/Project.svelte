@@ -1,41 +1,58 @@
 <script>
   export let data;
-  let x = 0;
-  let y = 0;
-
-  function handleMouseMove(event, card) {
-    const rect = card.getBoundingClientRect();
-    x = event.clientX - rect.left;
-    y = event.clientY - rect.top;
-
-    card.style.setProperty("--x", `${x}px`);
-    card.style.setProperty("--y", `${y}px`);
-  }
+  export let proId;
 </script>
 
-<a
-  href={data.href}
-  target="_blank"
-  class="card p-4 sm:p-6 md:pd-8 flex flex-col gap-4 rounded-lg border border-zinc-600 text-center group cursor-pointer duration-200"
-  on:mousemove={(event) => handleMouseMove(event, event.currentTarget)}
+<li
+  aria-labelledby={"project-item-" + proId}
+  data-item-index={proId}
+  aria-current="false"
+  aria-hidden="false"
+  class="relative aspect-[2/3] w-[clamp(18rem,42vmin,26rem)] overflow-hidden rounded-md"
 >
-  <div
-    class="relative grid place-items-center px-4 text-5xl md:text-6xl mx-auto duration-200 overflow-hidden"
+  <a
+    href={data.href}
+    aria-label={data.name + " project details"}
+    aria-disabled="false"
+    class="group block h-full w-full rounded-md border border-zinc-50/30"
+    draggable="false"
   >
-    <i class={data.icon + " relative z-1"} />
-  </div>
-  <h3>{data.name}</h3>
-
-  <p>{data.desc}</p>
-
-  <div class="flex-1 flex justify-between gap-4 items-center">
-    <div
-      class="ml-auto cursor-pointer hover:text-zinc-950 duration-500 relative p-2 rounded after:absolute after:top-0 after:h-0 after:right-full after:w-full after:h-full after:bg-zinc-50 after:duration-200 hover:after:translate-x-full after:z-[-1] overflow-hidden"
+    <article
+      class="absolute inset-0 flex flex-col items-center justify-center gap-y-2 bg-zinc-900/50 p-4 text-center opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100"
     >
-      <p class="relative z-4">
-        Go to
-        <i class="fa-solid fa-arrow-right place-items-center aspect-square" />
-      </p>
-    </div>
-  </div>
-</a>
+      <div class="overflow-hidden">
+        <time
+          datetime="2023-08-01"
+          class="block translate-y-full text-xs uppercase text-zinc-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0"
+        >
+          {data.date}
+        </time>
+      </div>
+
+      <div class="overflow-hidden">
+        <h3
+          id={"project-item-" + proId}
+          class="translate-y-full text-2xl font-bold transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-4xl"
+        >
+          {data.name}
+        </h3>
+      </div>
+      <div class="overflow-hidden">
+        <p
+          class="translate-y-full text-xs text-zinc-50/90 transition-transform duration-300 group-hover:translate-y-0 group-focus-visible:translate-y-0 lg:text-sm"
+        >
+          {data.desc}
+        </p>
+      </div>
+    </article>
+    <img
+      alt={data.name + " background"}
+      src={data.imgPath}
+      sizes="(max-width: 3840px) 100vw, 3840px"
+      width="3840"
+      height="2160"
+      class="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover transition-[transform,opacity,filter] duration-700 group-hover:scale-105 group-focus-visible:scale-105"
+      style="background-color: rgb(60, 108, 52); object-position: 4.5584% center;"
+    />
+  </a>
+</li>
