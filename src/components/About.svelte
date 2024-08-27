@@ -1,7 +1,7 @@
 <script>
     export let description = `
-      , a passionate freelancer from Cali, Colombia bringing you web development
-      and design from the future. My expertise is developing next-level
+      , a passionate programmer, avid reader and electronic hobbiest from Cali, Colombia. Bringing you web development
+      and design to another level. My expertise is developing next-level
       websites and web applications including full frontend design.
     `;
 
