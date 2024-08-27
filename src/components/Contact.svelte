@@ -60,7 +60,7 @@
       ></textarea>
     </div>
 
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-center gap-1">
       <span class="text-zinc-400 text-sm">
         <i class="fa-solid fa-envelope pr-1 text-zinc-50"/>
         luisalfredo9905@gmail.com
@@ -68,9 +68,9 @@
 
       <button
         type="submit"
-        class="bg-zinc-50 text-zinc-900 px-2 py-2 rounded-md hover:bg-zinc-200 transition-colors transition-500"
+        class="relative isolate flex justify-center items-center select-none overflow-hidden border align-middle transition-all duration-500 before:absolute before:-start-3 before:top-0 before:-z-10 before:h-full before:w-[calc(100%+1.5rem)] before:origin-left before:-skew-x-[16deg] before:scale-x-0 before:transition-transform before:duration-500 hover:before:scale-x-100 focus-visible:before:scale-x-100 active:scale-[1.01] disabled:opacity-70 after:border-zinc-50 px-3 py-1.5 text-sm md:px-4 md:py-2 md:text-base hover:text-zinc-50 focus-visible:text-zinc-900 text-zinc-900 before:bg-zinc-900 rounded-full bg-zinc-50"
       >
-        Hit me up <i class="fa-solid fa-rocket"/>
+        Send <i class="fa-solid fa-paper-plane pl-1"/>
       </button>
     </div>
   </form>
