@@ -29,7 +29,10 @@
   let currentProdId = 0;
 
   function moveCarousel(offset) {
-    const prodId = Math.abs(currentProdId + offset) % projects.length;
+    let prodId =
+      currentProdId + offset < 0
+        ? projects.length - 1
+        : (currentProdId + offset) % projects.length;
     currentProdId = prodId;
 
     const carousel = document.getElementById("project-carousel");
