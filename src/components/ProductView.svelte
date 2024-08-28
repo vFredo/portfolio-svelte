@@ -1,8 +1,8 @@
 <script>
   import { onMount } from "svelte";
-  import Project from "../components/Project.svelte";
+  import Product from "../components/Product.svelte";
 
-  let projects = [
+  let products = [
     {
       href: "https://github.com/vFredo/gameOfLife",
       name: "Game of Life",
@@ -31,8 +31,8 @@
   function moveCarousel(offset) {
     let prodId =
       currentProdId + offset < 0
-        ? projects.length - 1
-        : (currentProdId + offset) % projects.length;
+        ? products.length - 1
+        : (currentProdId + offset) % products.length;
     currentProdId = prodId;
 
     const carousel = document.getElementById("project-carousel");
@@ -95,12 +95,12 @@
     >
       <ul
         id="project-carousel"
-        aria-label="Project Carousel"
+        aria-label="Products Carousel"
         class="grid auto-cols-min grid-flow-col gap-x-6 overflow-x-auto pe-[calc(50vw-(clamp(18rem,42vmin,26rem)+1.5rem)/2)] ps-[calc(50vw-clamp(18rem,42vmin,26rem)/2-7px)]"
       >
-        {#each projects as project, index}
-          <Project
-            prod={project}
+        {#each products as product, index}
+          <Product
+            prod={product}
             prodId={index}
             isActive={currentProdId === index}
           />
