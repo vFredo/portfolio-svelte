@@ -15,7 +15,7 @@
       name: "PNGme",
       date: "October 2023",
       desc: "A command line program, written in rust, that lets you encode/decode secret messages inside PNG format files.",
-      imgPath: "assets/game_of_life.png",
+      imgPath: "assets/noice_pngme.png",
     },
     {
       href: "#",
