@@ -29,7 +29,7 @@
   let currentProdId = 0;
 
   function moveCarousel(offset) {
-    let prodId = Math.abs(currentProdId + offset) % projects.length;
+    const prodId = Math.abs(currentProdId + offset) % projects.length;
     currentProdId = prodId;
 
     const carousel = document.getElementById("project-carousel");
@@ -49,7 +49,6 @@
     }
   }
 
-  // Add the scroll event listener
   onMount(() => {
     moveCarousel(0); // Move to the first project on mount
   });
