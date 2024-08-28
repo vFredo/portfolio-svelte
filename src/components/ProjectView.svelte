@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   import Project from "../components/Project.svelte";
 
   let projects = [
@@ -25,7 +26,7 @@
     },
   ];
 
-  let currentProdId = -1;
+  let currentProdId = 0;
 
   function moveCarousel(offset) {
     let prodId = Math.abs(currentProdId + offset) % projects.length;
@@ -47,6 +48,11 @@
       });
     }
   }
+
+  // Add the scroll event listener
+  onMount(() => {
+    moveCarousel(0); // Move to the first project on mount
+  });
 </script>
 
 <div class="flex flex-col gap-2 text-center">
@@ -91,7 +97,11 @@
         class="grid auto-cols-min grid-flow-col gap-x-6 overflow-x-auto pe-[calc(50vw-(clamp(18rem,42vmin,26rem)+1.5rem)/2)] ps-[calc(50vw-clamp(18rem,42vmin,26rem)/2-7px)]"
       >
         {#each projects as project, index}
-          <Project prod={project} prodId={index} />
+          <Project
+            prod={project}
+            prodId={index}
+            isActive={currentProdId === index}
+          />
         {/each}
       </ul>
     </div>
