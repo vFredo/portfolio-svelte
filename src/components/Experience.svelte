@@ -24,14 +24,15 @@
 >
   <h6 class="text-lg sm:text-xl md:text-2xl">Want to know more?</h6>
   <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-    A <span class="poppins text-blue-400">little</span> bit about my <span class="poppins text-blue-400">experiences</span>.
+    A <span class="poppins text-blue-400">little</span> bit about my
+    <span class="poppins text-blue-400">experiences</span>.
   </h3>
 </div>
-<div class="flex flex-col gap-20 w-full mx-auto max-w-[600px]">
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-20 w-full mx-auto max-w-[1200px]">
   {#each experiences as exp, index}
     <div class="flex gap-6 sm:gap-8">
-
-      <p class="poppins text-4xl sm:text-5xl md:text-6xl text-zinc-500 font-semibold" >
+      <p class="poppins text-4xl sm:text-5xl md:text-6xl text-zinc-500 font-semibold">
         0{index + 1}
       </p>
 
