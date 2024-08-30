@@ -25,7 +25,7 @@
     <p>
       <i class="fa-brands fa-linkedin pr-2" />
       <a
-        href="https://www.github.com/vFredo"
+        href="www.linkedin.com/in/luis-alfredo-rodriguez-a9b2422b4"
         class="text-blue-400"
         target="_blank"
       >

@@ -26,16 +26,6 @@
 
 <body data-sveltekit-preload-data="hover" class="bg-zinc-900 text-zinc-50 relative">
   <div style="display: contents" class="relative z-[1]">%sveltekit.body%</div>
-
-  <div class="absolute min-h-screen top-0 left-0 w-full z-[-1] opacity-70">
-    <!-- Display particlesJS -->
-    <div class="absolute inset-0" id="particles-js"></div>
-    <script>
-      particlesJS.load('particles-js', '/assets/particlesjs-config.json',
-        () => console.log("Callback - particles.js config loaded!")
-      );
-    </script>
-  </div>
 </body>
 
 </html>

@@ -2,6 +2,7 @@
   import "../app.css";
   import Header from "../components/Header.svelte";
   import Footer from "../components/Footer.svelte";
+  import Particles from "../components/Particles.svelte";
 
   let y;
   let innerHeight = 0;
@@ -12,6 +13,7 @@
   }
 </script>
 
+<Particles />
 <div
   id="home"
   class="relative flex flex-col mx-auto max-w-[1400px] w-full text-sm sm:text-base min-h-screen"
