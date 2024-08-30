@@ -2,7 +2,7 @@
   export let description = `, a passionate programmer, avid reader and electronics hobbies from Cali, Colombia. Bringing your web development and design to another level. My expertise is developing next-level websites and web applications, including full frontend design and backend capabilities.
     `;
 
-  let imgSrc = "assets/persona.png";
+  let imgSrc = "/assets/persona.png";
 </script>
 
 <div class="flex h-screen border rounded-xl overflow-hidden border-transparent">

@@ -25,7 +25,7 @@
 </div>
 <div class="relative grid place-items-center">
   <img
-    src={"assets/profile.png"}
+    src={"/assets/profile.png"}
     alt="Computer Hero"
     class="object-cover z-[2] max-h-[70vh]"
   />

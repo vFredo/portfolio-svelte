@@ -8,21 +8,21 @@
       name: "Game of Life",
       date: "June 2023 ",
       desc: "Connway's Game of Life implementation on Go that renders on the terminal. You can load and save diferent presets in JSON format and change different properties of the game itself, also with convenient keyboard shortcuts to advance generations, stop running and save or load different presets.",
-      imgPath: "assets/game_of_life.png",
+      imgPath: "/assets/game_of_life.png",
     },
     {
       href: "https://github.com/vFredo/pngme",
       name: "PNGme",
       date: "October 2023",
       desc: "A command line program, written in rust, that lets you encode/decode secret messages inside PNG format files.",
-      imgPath: "assets/noice_pngme.png",
+      imgPath: "/assets/noice_pngme.png",
     },
     {
       href: "#",
       name: "Zoo webpage",
       date: "June 2020",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia error facere culpa, blanditiis praesentium voluptatibus neque maiores magni odio perspiciatis excepturi illum nostrum id impedit. Repellendus reprehenderit distinctio aut.",
-      imgPath: "assets/game_of_life.png",
+      imgPath: "/assets/game_of_life.png",
     },
   ];
 
