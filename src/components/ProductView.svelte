@@ -18,11 +18,11 @@
       imgPath: "/assets/noice_pngme.png",
     },
     {
-      href: "#",
+      href: "https://github.com/vfredo/zoo_web",
       name: "Zoo webpage",
-      date: "June 2020",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus mollitia error facere culpa, blanditiis praesentium voluptatibus neque maiores magni odio perspiciatis excepturi illum nostrum id impedit. Repellendus reprehenderit distinctio aut.",
-      imgPath: "/assets/game_of_life.png",
+      date: "November 2020",
+      desc: "Redesigned and modernized the outdated website of Cali's Zoo, focusing on better UX by implementing a responsive and visually appealing interface using React and Bootstrap.",
+      imgPath: "/assets/cali_zoo.png",
     },
   ];
 
@@ -61,10 +61,10 @@
   <h6 class="text-lg sm:text-xl md:text-2xl">
     Curious to <span class="poppins text-blue-400">see</span> my work?
   </h6>
-  <h3>A few of my little creations . . .</h3>
+  <h3>A few of my <span class="poppins text-blue-400">projects</span> . . .</h3>
 </div>
 
-<div class="mt-4 w-full">
+<div class="w-full">
   <div class="relative py-8">
     <div
       aria-label="Carousel Controls"
