@@ -4,6 +4,13 @@
 
   let products = [
     {
+      href: "https://github.com/vFredo/planos_craneales_prenatales",
+      name: "Classification model for PCU images",
+      date: "Present",
+      desc: "The development of a deep learning-based tool to classify different brain planes (transventricular, transthalamic, and transcerebellar) in PCU (Prenatal Cranial Ultrasound) images.",
+      imgPath: "/assets/PCU_prediction.png",
+    },
+    {
       href: "https://github.com/vFredo/gameOfLife",
       name: "Game of Life",
       date: "June 2023 ",
