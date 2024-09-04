@@ -1,5 +1,5 @@
 <script>
-  export let description = `, a passionate programmer, avid reader and electronics hobbies from Cali, Colombia. Bringing your web development and design to another level. My expertise is developing next-level websites and web applications, including full frontend design and backend capabilities.
+  export let description = `, a passionate programmer, avid reader and electronics enthusiast. I have experience in web application development, covering both full front-end design and back-end development. I am deeply motivated by the fields of web development and artificial intelligence, where I am constantly looking to innovate and hone my skills.
     `;
 
   let imgSrc = "/assets/persona.png";

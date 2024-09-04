@@ -2,11 +2,11 @@
   let experiences = [
     {
       name: "Education",
-      desc: "Pontificia Universidad Javeriana, Cali - Software Engineer 2025",
+      desc: "Pontificia Universidad Javeriana, Cali - Software Engineer 2019-Present",
     },
     {
       name: "Soluware Colombia S.A.S",
-      desc: "System Program Analyst - 2021-2024",
+      desc: "System Program Analyst - 2021-Present",
     },
     {
       name: "MisCursosEnLinea",

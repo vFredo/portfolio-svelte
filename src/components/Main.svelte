@@ -30,7 +30,6 @@
 
   <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
     <ProductView />
-    <p class="mx-auto italic text-lg">So why not invest?</p>
   </section>
 
   <section

@@ -39,9 +39,27 @@
         </sup>
       </a>
     </p>
-    <p class="text-xs text-zinc-400">
-      <i class="fa-regular fa-copyright pr-1" />
-      Fredo 2024
+    <!-- Mail -->
+    <p>
+      <i class="fa-solid fa-envelope pr-2" />
+      <a
+        href="mailto:luisalfredo9905@gmail.com"
+        class="text-blue-400"
+        target="_blank"
+      >
+        luisalfredo9905@gmail.com
+        <sup>
+          <span class="text-xs scale-75 pl-0.5">
+            <i
+              class="fa-solid fa-arrow-up-right-from-square text-xs scale-[75%]"
+            />
+          </span>
+        </sup>
+      </a>
     </p>
   </div>
+  <p class="text-xs text-zinc-400">
+    <i class="fa-regular fa-copyright pr-1" />
+    Fredo 2024
+  </p>
 </footer>

@@ -15,8 +15,8 @@
     </button>
     <h2 class="text-3xl md:text-4xl sm:text-5xl font-bold mb-4">Got a problem to solve?</h2>
     <p class="text-zinc-400 text-base">
-      Get your space suit ready and tell me your ideas to develop your dream
-      website.
+      I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+      Whether you have a question, a proposal, or just want to say hello, feel free to reach out.
     </p>
   </div>
 
