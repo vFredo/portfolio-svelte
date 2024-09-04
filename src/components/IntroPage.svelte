@@ -10,7 +10,7 @@
     django), Javascript/Typescript (React or Svelte), Node.js + Express.js & PostgreSQL
   </p>
   <a
-    href="https://drive.google.com/file/d/1n1zTdFadI0769658NzUh3xPd1LmOIx2P/view?usp=sharing"
+    href="https://drive.google.com/file/d/1O2wHkVy5Nn4TmxeKXBzAk2e-GbO0lMyC/view?usp=sharing"
     target="_blank"
     class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-zinc-50 text-zinc-950 cursor-pointer"
   >
